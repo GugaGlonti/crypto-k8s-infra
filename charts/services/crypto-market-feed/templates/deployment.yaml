@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-market-feed
+  labels:
+    app: crypto-market-feed
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crypto-market-feed
+  template:
+    metadata:
+      labels:
+        app: crypto-market-feed
+    spec:
+      containers:
+        - name: crypto-market-feed
+          image: ghcr.io/gugaglonti/crypto-market-feed:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODE_ENV
+              value: 'production'
+          resources:
+            limits:
+              cpu: '500m'
+              memory: '512Mi'
+            requests:
+              cpu: '250m'
+              memory: '256Mi'
+      imagePullSecrets:
+        - name: ghcr-secret

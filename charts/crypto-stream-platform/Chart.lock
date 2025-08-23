@@ -1,0 +1,6 @@
+dependencies:
+- name: crypto-market-feed
+  repository: file://../services/crypto-market-feed
+  version: 0.1.0
+digest: sha256:868addf31368ee43273c52b7e7cc411c9f6304725fa9cac80617758767515802
+generated: "2025-08-23T02:22:01.252216+02:00"
