@@ -4,9 +4,13 @@ description: A Helm chart for Kubernetes
 type: application
 
 version: 0.1.0
-appVersion: '0.1.0'
+appVersion: "0.1.0"
 
 dependencies:
   - name: crypto-market-feed
     version: 0.1.0
-    repository: 'file://../services/crypto-market-feed'
+    repository: "file://../services/crypto-market-feed"
+
+  - name: kafka
+    version: "32.3.0"
+    repository: "https://charts.bitnami.com/bitnami"
