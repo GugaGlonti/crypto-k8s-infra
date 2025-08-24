@@ -11,6 +11,6 @@ dependencies:
     version: 0.1.0
     repository: "file://../services/crypto-market-feed"
 
-  - name: kafka
-    version: "32.3.0"
-    repository: "https://charts.bitnami.com/bitnami"
+  - name: crypto-kafka
+    version: 0.1.0
+    repository: "file://../services/crypto-kafka"

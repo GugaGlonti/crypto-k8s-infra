@@ -1,7 +1,2 @@
 metadata:
   namespace: "crypto"
-
-kafka:
-  mode: kraft
-  controller:
-    replicaCount: 1
