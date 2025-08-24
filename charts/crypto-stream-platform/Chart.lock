@@ -2,5 +2,8 @@ dependencies:
 - name: crypto-market-feed
   repository: file://../services/crypto-market-feed
   version: 0.1.0
-digest: sha256:868addf31368ee43273c52b7e7cc411c9f6304725fa9cac80617758767515802
-generated: "2025-08-23T02:22:01.252216+02:00"
+- name: kafka
+  repository: https://charts.bitnami.com/bitnami
+  version: 32.3.0
+digest: sha256:5c75c3afa31540495419bd3b3eb4e68967b557806b8816b2e2906d076865e1d3
+generated: "2025-08-24T21:50:20.353556+02:00"
