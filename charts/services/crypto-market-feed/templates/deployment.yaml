@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: {{.Values.metadata.namespace}}
   name: crypto-market-feed
   labels:
     app: crypto-market-feed
