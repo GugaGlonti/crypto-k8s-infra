@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "✅ Recursively building Helm dependencies..."
+echo "✅ Building all Helm charts recursively..."
 
 build_dependencies() {
   local chart_path=$1
@@ -18,6 +18,12 @@ build_dependencies() {
   fi
 }
 
+for service_chart in charts/services/*; do
+  if [ -d "$service_chart" ]; then
+    build_dependencies "$service_chart"
+  fi
+done
+
 build_dependencies "charts/crypto-stream-platform"
 
-echo "✅ All Helm dependencies built recursively!"
+echo "✅ All Helm charts and dependencies built!"
