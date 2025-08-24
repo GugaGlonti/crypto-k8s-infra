@@ -1,2 +1,4 @@
 metadata:
   namespace: ""
+
+image: ghcr.io/gugaglonti/crypto-market-feed:latest
