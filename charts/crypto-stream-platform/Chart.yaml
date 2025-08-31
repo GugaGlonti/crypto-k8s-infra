@@ -14,3 +14,7 @@ dependencies:
   - name: crypto-kafka
     version: 0.1.0
     repository: "file://../services/crypto-kafka"
+
+  - name: crypto-flink
+    version: 0.1.0
+    repository: "file://../services/crypto-flink"

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: kafka
-          image: apache/kafka:latest
+          image: {{.Values.image}}
           ports:
             - containerPort: 9092
               name: kafka

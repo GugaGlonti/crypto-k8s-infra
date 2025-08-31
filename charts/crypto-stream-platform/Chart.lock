@@ -5,5 +5,8 @@ dependencies:
 - name: crypto-kafka
   repository: file://../services/crypto-kafka
   version: 0.1.0
-digest: sha256:d69cd798c053dedf8b4b34d8510cc5cd0eb745fb55e1085c6ed96c9a9df247ef
-generated: "2025-08-24T22:34:19.571336+02:00"
+- name: crypto-flink
+  repository: file://../services/crypto-flink
+  version: 0.1.0
+digest: sha256:091d6cc3252f72f6799849e539ccc0a7c2beef84124a4f0fd9015dba4c03332e
+generated: "2025-08-31T22:04:12.573889+02:00"
