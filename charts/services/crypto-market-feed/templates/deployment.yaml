@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: {{.Values.metadata.namespace}}
+  namespace: {{.Release.Namespace}}
   name: crypto-market-feed
   labels:
     app: crypto-market-feed
@@ -24,6 +24,12 @@ spec:
           env:
             - name: NODE_ENV
               value: "production"
+            - name: BINANCE_URL
+              value: {{.Values.binanceUrl}}
+            - name: BINANCE_TRADES
+              value: {{.Values.binanceTrades}}
+            - name: KAFKA_BROKER
+              value: {{.Values.kafkaBroker}}
           resources:
             limits:
               cpu: "500m"
