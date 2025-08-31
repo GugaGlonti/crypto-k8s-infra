@@ -8,8 +8,6 @@ RELEASE_NAME="crypto-platform"
 echo "✅ Creating namespace: $NAMESPACE (if not exists)"
 kubectl create namespace $NAMESPACE --dry-run=client -o yaml | kubectl apply -f -
 
-source ./scripts/build-dependencies.sh
-
 echo "✅ Installing/upgrading umbrella chart: $RELEASE_NAME"
 helm upgrade --install "$RELEASE_NAME" "$UMBRELLA_CHART" -n "$NAMESPACE"
 
