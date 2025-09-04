@@ -1,0 +1,38 @@
+# Crypto K8s Infra
+
+Helm chart for deploying resources in a Kubernetes cluster.
+
+## Installation
+
+Build Helm chart dependencies
+
+```bash
+. ./scripts/build-dependencies.sh
+```
+
+Install the chart
+
+```bash
+./scripts/install-all.sh
+```
+
+## Components
+
+### Crypto Stream Platform
+
+Main Helm chart for deploying the Crypto Stream Platform in a Kubernetes cluster.
+
+Has Sub-Chart dependencies for various components.
+
+### Crypto Kafka
+
+A Kafka cluster for managing and processing streaming data.
+
+### Crypto Flink
+
+A Flink cluster for real-time stream processing.
+
+### Crypto Market Feed
+
+A microservice for providing market data feeds.  
+It simulates high data throughput by fetching data from multiple sources and producing it to Kafka topics.
