@@ -2,4 +2,13 @@ metadata:
   namespace: "crypto"
 
 crypto-market-feed:
-  image: ghcr.io/gugaglonti/crypto-market-feed:latest
+  enabled: true # TODO: link up
+  image: crypto-market-feed
+  version: local
+  imagePullPolicy: Never
+
+crypto-kafka:
+  enabled: true # TODO: link up
+  image: apache/kafka
+  version: latest
+  imagePullPolicy: Always

@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: crypto-market-feed
-          image: {{.Values.image}}
-          imagePullPolicy: Always
+          image: {{.Values.image}}:{{.Values.version}}
+          imagePullPolicy: {{.Values.imagePullPolicy}}
           ports:
             - containerPort: 3000
           env:

@@ -1,1 +1,3 @@
-image: apache/kafka:latest
+image: apache/kafka
+version: latest
+imagePullPolicy: Always

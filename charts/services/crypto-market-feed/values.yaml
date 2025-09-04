@@ -1,8 +1,10 @@
 metadata:
   namespace: ""
 
-image: ghcr.io/gugaglonti/crypto-market-feed:latest
+image: ghcr.io/gugaglonti/crypto-market-feed
+version: latest
+imagePullPolicy: Always
 
 binanceUrl: wss://stream.binance.com:9443/ws
 binanceTrades: ltcusdt@trade/btcusdt@trade/ethusdt@trade
-kafkaBroker: localhost:9092
+kafkaBroker: kafka-service.crypto.svc.cluster.local:9092
